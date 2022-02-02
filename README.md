@@ -14,9 +14,9 @@
     eslint-plugin-import@^2.22.1 \
     eslint-plugin-node@^11.1.0 \
     @typescript-eslint/eslint-plugin@^4.0.1 \
-    eslint-config-standard-with-typescript@latest
-    eslint-plugin-vue
-    eslint-config-prettier
+    eslint-config-standard-with-typescript@latest \
+    eslint-plugin-vue \
+    eslint-config-prettier \
   ```
 
 - 安装最新
@@ -31,9 +31,9 @@
     eslint-plugin-import \
     eslint-plugin-node \
     @typescript-eslint/eslint-plugin \
-    eslint-config-standard-with-typescript
-    eslint-plugin-vue
-    eslint-config-prettier
+    eslint-config-standard-with-typescript \
+    eslint-plugin-vue \
+    eslint-config-prettier \
   ```
 
 2. 配置
