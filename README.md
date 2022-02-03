@@ -8,7 +8,7 @@
 
   ```shell
   pnpm install --save-dev \
-    typescript@\* \
+    typescript@\~4.4.0 \
     eslint@^7.12.1 \
     eslint-plugin-promise@^5.0.0 \
     eslint-plugin-import@^2.22.1 \
@@ -17,6 +17,7 @@
     eslint-config-standard-with-typescript@latest \
     eslint-plugin-vue \
     eslint-config-prettier \
+    prettier
   ```
 
 - 安装最新
@@ -25,7 +26,7 @@
 
   ```shell
   pnpm install --save-dev \
-    typescript@\* \
+    typescript \
     eslint \
     eslint-plugin-promise \
     eslint-plugin-import \
@@ -34,6 +35,7 @@
     eslint-config-standard-with-typescript \
     eslint-plugin-vue \
     eslint-config-prettier \
+    prettier
   ```
 
 2. 配置
@@ -43,12 +45,12 @@
 ```js
 module.exports = {
   extends: [
-    "standard-with-typescript",
-    "plugin:vue/vue3-recommended",
-    "prettier",
+    'standard-with-typescript',
+    'plugin:vue/vue3-recommended',
+    'prettier',
   ],
   parserOptions: {
-    project: "./tsconfig.json",
+    project: './tsconfig.json',
   },
 }
 ```
