@@ -1,5 +1,5 @@
-//用ts-node的默认配置，会转换为cjs让node执行，这样就可以测试运行了
 {
+  //用ts-node的默认配置，会转换为cjs让node执行，这样就可以测试运行了
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "./lib", // 输出目录
