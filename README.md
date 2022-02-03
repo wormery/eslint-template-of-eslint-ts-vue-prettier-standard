@@ -40,18 +40,24 @@
 
 2. 配置
 
-新建一个`.eslintrc.js`,在其中输入内容
+新建一个`.eslintrc`,在其中输入内容
 
-```js
-module.exports = {
-  extends: [
-    'standard-with-typescript',
-    'plugin:vue/vue3-recommended',
-    'prettier',
+```json
+{
+  "plugins": ["@typescript-eslint", "vue"],
+  "extends": [
+    "plugin:vue/vue3-recommended",
+    "standard-with-typescript",
+    "prettier"
   ],
-  parserOptions: {
-    project: './tsconfig.json',
+  "parserOptions": {
+    "project": "./tsconfig.esm.json"
   },
+  "rules": {
+    // off禁用
+    // 禁止强制类型转换
+    "@typescript-eslint/strict-boolean-expressions": "off"
+  }
 }
 ```
 
@@ -59,6 +65,7 @@ module.exports = {
 
 ```json
 {
-  "semi": false
+  "semi": false,
+  "singleQuote": true
 }
 ```
